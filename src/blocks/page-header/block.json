@@ -1,0 +1,23 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "foodblog16-plus/page-header",
+  "title": "Page Header",
+  "category": "text",
+  "description": "Adds a dynamic page header for the search form and categories.",
+  "keywords": ["search form"],
+  "version": "1.0.0",
+  "textdomain": "foodblog16-plus",
+  "editorScript": "file:./index.js",
+  "style": "file:./index.css",
+  "attributes": {
+    "content": {
+      "type": "string",
+      "default": ""
+    },
+    "showCategory": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

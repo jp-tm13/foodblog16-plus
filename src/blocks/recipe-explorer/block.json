@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "foodblog16-plus/recipe-explorer",
+  "title": "Recipe Explorer",
+  "category": "widgets",
+  "description": "Adds a block that alows for displaying the latest/random recipes.",
+  "keywords": ["posts"],
+  "version": "1.0.0",
+  "textdomain": "foodblog16-plus",
+  "editorScript": "file:./index.js",
+  "style": "file:./index.css",
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Explore our recipes"
+    },
+    "count": {
+      "type": "number",
+      "default": 4
+    },
+    "cuisines": {
+      "type": "array",
+      "default": []
+    }
+  }
+}

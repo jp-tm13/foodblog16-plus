@@ -1,0 +1,19 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "foodblog16-plus/navigation-side-menu",
+  "title": "Navigation Side Menu",
+  "category": "widgets",
+  "description": "Adds a block that opens a side menu.",
+  "keywords": ["menu", "navigation", "links"],
+  "version": "1.0.0",
+  "textdomain": "foodblog16-plus",
+  "editorScript": "file:./index.js",
+  "viewScript": "file:./frontend.js",
+  "style": "file:./index.css",
+  "attributes": {
+    "ref": {
+      "type": "number"
+    }
+  }
+}

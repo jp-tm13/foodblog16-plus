@@ -1,0 +1,25 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "foodblog16-plus/search-form",
+  "title": "Search Form",
+  "category": "widgets",
+  "description": "Adds a search form.",
+  "keywords": [
+    "search form"
+  ],
+  "version": "1.0.0",
+  "textdomain": "foodblog16-plus",
+  "editorScript": "file:./index.js",
+  "style": "file:./index.css",
+  "attributes": {
+    "bgColor": {
+      "type": "string",
+      "default": "#f87171"
+    },
+    "textColor": {
+      "type": "string",
+      "default": "#ffffff"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "foodblog16-plus/recipe-summary",
+  "title": "Recipe Summary",
+  "category": "widgets",
+  "description": "Adds a summary section for a recipe.",
+  "keywords": [
+    "menu",
+    "navigation",
+    "links"
+  ],
+  "version": "1.0.0",
+  "textdomain": "foodblog16-plus",
+  "editorScript": "file:./index.js",
+  "viewScript": "file:./frontend.js",
+  "style": "file:./index.css",
+  "attributes": {
+    "prepTime": {
+      "type": "string"
+    },
+    "cookTime": {
+      "type": "string"
+    },
+    "course": {
+      "type": "string"
+    }
+  },
+  "usesContext": [
+    "postId"
+  ]
+}

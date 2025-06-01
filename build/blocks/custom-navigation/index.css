@@ -1,0 +1,1266 @@
+/*!*********************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./src/blocks/custom-navigation/editor.css ***!
+  \*********************************************************************************************************************************************************************************************/
+.editor-styles-wrapper .wp-block-foodblog16-plus-custom-navigation ul {
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+.editor-styles-wrapper
+  .wp-block-foodblog16-plus-custom-navigation
+  .wp-block-navigation-item.wp-block {
+  margin: revert;
+}
+
+.wp-block-navigation-item__label {
+  display: inline;
+}
+.wp-block-navigation-item,
+.wp-block-foodblog16-plus-custom-navigation__container {
+  background-color: inherit;
+}
+
+.wp-block-foodblog16-plus-custom-navigation:not(.is-selected):not(
+    .has-child-selected
+  )
+  .has-child:hover
+  > .wp-block-navigation__submenu-container {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.has-child.has-child-selected > .wp-block-navigation__submenu-container,
+.has-child.is-selected > .wp-block-navigation__submenu-container {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+}
+
+.is-dragging-components-draggable
+  .has-child.is-dragging-within
+  > .wp-block-navigation__submenu-container {
+  opacity: 1;
+  visibility: visible;
+}
+
+.is-editing > .wp-block-foodblog16-plus-custom-navigation__container {
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  visibility: visible;
+}
+
+.is-dragging-components-draggable
+  .wp-block-navigation-link
+  > .wp-block-foodblog16-plus-custom-navigation__container {
+  opacity: 1;
+  visibility: hidden;
+}
+.is-dragging-components-draggable
+  .wp-block-navigation-link
+  > .wp-block-foodblog16-plus-custom-navigation__container
+  .block-editor-block-draggable-chip-wrapper {
+  visibility: visible;
+}
+
+.is-editing > .wp-block-navigation__submenu-container > .block-list-appender {
+  display: block;
+  position: static;
+  width: 100%;
+}
+.is-editing
+  > .wp-block-navigation__submenu-container
+  > .block-list-appender
+  .block-editor-button-block-appender {
+  background: #1e1e1e;
+  color: #fff;
+  margin-left: auto;
+  margin-right: 0;
+  padding: 0;
+  width: 24px;
+}
+
+.wp-block-navigation__submenu-container .block-list-appender {
+  display: none;
+}
+.block-library-colors-selector {
+  width: auto;
+}
+.block-library-colors-selector .block-library-colors-selector__toggle {
+  display: block;
+  margin: 0 auto;
+  padding: 3px;
+  width: auto;
+}
+.block-library-colors-selector .block-library-colors-selector__icon-container {
+  align-items: center;
+  border-radius: 4px;
+  display: flex;
+  height: 30px;
+  margin: 0 auto;
+  padding: 3px;
+  position: relative;
+}
+.block-library-colors-selector .block-library-colors-selector__state-selection {
+  border-radius: 11px;
+  box-shadow: inset 0 0 0 1px #0003;
+  height: 22px;
+  line-height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 22px;
+  min-width: 22px;
+  padding: 2px;
+  width: 22px;
+}
+.block-library-colors-selector
+  .block-library-colors-selector__state-selection
+  > svg {
+  min-width: auto !important;
+}
+.block-library-colors-selector
+  .block-library-colors-selector__state-selection.has-text-color
+  > svg,
+.block-library-colors-selector
+  .block-library-colors-selector__state-selection.has-text-color
+  > svg
+  path {
+  color: inherit;
+}
+
+.block-library-colors-selector__popover .color-palette-controller-container {
+  padding: 16px;
+}
+.block-library-colors-selector__popover .components-base-control__label {
+  height: 20px;
+  line-height: 20px;
+}
+.block-library-colors-selector__popover .component-color-indicator {
+  float: right;
+  margin-top: 2px;
+}
+.block-library-colors-selector__popover .components-panel__body-title {
+  display: none;
+}
+
+.wp-block-foodblog16-plus-custom-navigation
+  .wp-block
+  + .block-list-appender
+  .block-editor-button-block-appender {
+  background-color: #1e1e1e;
+  color: #fff;
+  height: 24px;
+}
+.wp-block-foodblog16-plus-custom-navigation
+  .wp-block
+  + .block-list-appender
+  .block-editor-button-block-appender.block-editor-button-block-appender.block-editor-button-block-appender {
+  padding: 0;
+}
+
+.wp-block-foodblog16-plus-custom-navigation
+  .wp-block
+  .wp-block
+  .block-editor-button-block-appender {
+  background-color: initial;
+  color: #1e1e1e;
+}
+@keyframes loadingpulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.components-placeholder.wp-block-foodblog16-plus-custom-navigation-placeholder {
+  background: none;
+  box-shadow: none;
+  color: inherit;
+  min-height: 0;
+  outline: none;
+  padding: 0;
+}
+.components-placeholder.wp-block-foodblog16-plus-custom-navigation-placeholder
+  .components-placeholder__fieldset {
+  font-size: inherit;
+}
+.components-placeholder.wp-block-foodblog16-plus-custom-navigation-placeholder
+  .components-placeholder__fieldset
+  .components-button {
+  margin-bottom: 0;
+}
+.wp-block-foodblog16-plus-custom-navigation.is-selected
+  .components-placeholder.wp-block-foodblog16-plus-custom-navigation-placeholder {
+  color: #1e1e1e;
+}
+
+.wp-block-foodblog16-plus-custom-navigation-placeholder__preview {
+  align-items: center;
+  background: #0000;
+  color: currentColor;
+  display: flex;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Oxygen-Sans,
+    Ubuntu,
+    Cantarell,
+    Helvetica Neue,
+    sans-serif;
+  font-size: 13px;
+  min-width: 96px;
+}
+.wp-block-navigation.is-selected
+  .wp-block-foodblog16-plus-custom-navigation-placeholder__preview {
+  display: none;
+}
+.wp-block-foodblog16-plus-custom-navigation-placeholder__preview:before {
+  border: 1px dashed;
+  border-radius: inherit;
+  bottom: 0;
+  content: "";
+  display: block;
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.wp-block-foodblog16-plus-custom-navigation-placeholder__preview > svg {
+  fill: currentColor;
+}
+
+.wp-block-foodblog16-plus-custom-navigation.is-vertical
+  .is-medium
+  .components-placeholder__fieldset,
+.wp-block-foodblog16-plus-custom-navigation.is-vertical
+  .is-small
+  .components-placeholder__fieldset {
+  min-height: 90px;
+}
+
+.wp-block-foodblog16-plus-custom-navigation.is-vertical
+  .is-large
+  .components-placeholder__fieldset {
+  min-height: 132px;
+}
+
+.wp-block-foodblog16-plus-custom-navigation-placeholder__controls,
+.wp-block-foodblog16-plus-custom-navigation-placeholder__preview {
+  align-items: flex-start;
+  flex-direction: row;
+  padding: 6px 8px;
+}
+
+.wp-block-foodblog16-plus-custom-navigation-placeholder__controls {
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: inset 0 0 0 1px #1e1e1e;
+  display: none;
+  float: left;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+.wp-block-foodblog16-plus-custom-navigation.is-selected
+  .wp-block-foodblog16-plus-custom-navigation-placeholder__controls {
+  display: flex;
+}
+.is-medium
+  .wp-block-foodblog16-plus-custom-navigation-placeholder__controls
+  .wp-block-foodblog16-plus-custom-navigation-placeholder__actions__indicator,
+.is-medium
+  .wp-block-foodblog16-plus-custom-navigation-placeholder__controls
+  .wp-block-foodblog16-plus-custom-navigation-placeholder__actions__indicator
+  + hr,
+.is-small
+  .wp-block-foodblog16-plus-custom-navigation-placeholder__controls
+  .wp-block-foodblog16-plus-custom-navigation-placeholder__actions__indicator,
+.is-small
+  .wp-block-foodblog16-plus-custom-navigation-placeholder__controls
+  .wp-block-foodblog16-plus-custom-navigation-placeholder__actions__indicator
+  + hr {
+  display: none;
+}
+.is-small
+  .wp-block-foodblog16-plus-custom-navigation-placeholder__controls
+  .wp-block-foodblog16-plus-custom-navigation-placeholder__actions,
+.wp-block-foodblog16-plus-custom-navigation.is-vertical
+  .wp-block-foodblog16-plus-custom-navigation-placeholder__controls
+  .wp-block-foodblog16-plus-custom-navigation-placeholder__actions {
+  align-items: flex-start;
+  flex-direction: column;
+}
+.is-small
+  .wp-block-foodblog16-plus-custom-navigation-placeholder__controls
+  .wp-block-foodblog16-plus-custom-navigation-placeholder__actions
+  hr,
+.wp-block-foodblog16-plus-custom-navigation.is-vertical
+  .wp-block-foodblog16-plus-custom-navigation-placeholder__controls
+  .wp-block-foodblog16-plus-custom-navigation-placeholder__actions
+  hr {
+  display: none;
+}
+.wp-block-foodblog16-plus-custom-navigation-placeholder__controls
+  .wp-block-foodblog16-plus-custom-navigation-placeholder__icon {
+  height: 36px;
+  margin-right: 12px;
+}
+
+.wp-block-foodblog16-plus-custom-navigation-placeholder__actions__indicator {
+  align-items: center;
+  display: flex;
+  height: 36px;
+  justify-content: flex-start;
+  line-height: 0;
+  margin-left: 4px;
+  padding: 0 6px 0 0;
+}
+.wp-block-foodblog16-plus-custom-navigation-placeholder__actions__indicator
+  svg {
+  margin-right: 4px;
+  fill: currentColor;
+}
+
+.wp-block-foodblog16-plus-custom-navigation
+  .components-placeholder.is-medium
+  .components-placeholder__fieldset {
+  flex-direction: row !important;
+}
+
+.wp-block-foodblog16-plus-custom-navigation-placeholder__actions {
+  align-items: center;
+  display: flex;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Oxygen-Sans,
+    Ubuntu,
+    Cantarell,
+    Helvetica Neue,
+    sans-serif;
+  font-size: 13px;
+  gap: 6px;
+  height: 100%;
+}
+.wp-block-foodblog16-plus-custom-navigation-placeholder__actions
+  .components-dropdown,
+.wp-block-foodblog16-plus-custom-navigation-placeholder__actions
+  > .components-button {
+  margin-right: 0;
+}
+.wp-block-foodblog16-plus-custom-navigation-placeholder__actions.wp-block-foodblog16-plus-custom-navigation-placeholder__actions
+  hr {
+  background-color: #1e1e1e;
+  border: 0;
+  height: 100%;
+  margin: auto 0;
+  max-height: 16px;
+  min-height: 1px;
+  min-width: 1px;
+}
+@media (min-width: 600px) {
+  .wp-block-foodblog16-plus-custom-navigation__responsive-container:not(
+      .is-menu-open
+    )
+    .components-button.wp-block-foodblog16-plus-custom-navigation__responsive-container-close {
+    display: none;
+  }
+}
+
+.wp-block-foodblog16-plus-custom-navigation__responsive-container.is-menu-open {
+  position: fixed;
+  top: 155px;
+}
+@media (min-width: 782px) {
+  .wp-block-foodblog16-plus-custom-navigation__responsive-container.is-menu-open {
+    left: 36px;
+    top: 93px;
+  }
+}
+@media (min-width: 960px) {
+  .wp-block-foodblog16-plus-custom-navigation__responsive-container.is-menu-open {
+    left: 160px;
+  }
+}
+
+.is-mobile-preview
+  .wp-block-foodblog16-plus-custom-navigation__responsive-container.is-menu-open,
+.is-tablet-preview
+  .wp-block-foodblog16-plus-custom-navigation__responsive-container.is-menu-open {
+  top: 141px;
+}
+
+.is-fullscreen-mode
+  .wp-block-foodblog16-plus-custom-navigation__responsive-container.is-menu-open {
+  left: 0;
+  top: 155px;
+}
+@media (min-width: 782px) {
+  .is-fullscreen-mode
+    .wp-block-foodblog16-plus-custom-navigation__responsive-container.is-menu-open {
+    top: 61px;
+  }
+}
+.is-fullscreen-mode
+  .is-mobile-preview
+  .wp-block-foodblog16-plus-custom-navigation__responsive-container.is-menu-open,
+.is-fullscreen-mode
+  .is-tablet-preview
+  .wp-block-foodblog16-plus-custom-navigation__responsive-container.is-menu-open {
+  top: 109px;
+}
+
+body.editor-styles-wrapper
+  .wp-block-foodblog16-plus-custom-navigation__responsive-container.is-menu-open {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.components-button.wp-block-foodblog16-plus-custom-navigation__responsive-container-close.wp-block-foodblog16-plus-custom-navigation__responsive-container-close,
+.components-button.wp-block-foodblog16-plus-custom-navigation__responsive-container-open.wp-block-foodblog16-plus-custom-navigation__responsive-container-open {
+  color: inherit;
+  height: auto;
+  padding: 0;
+}
+
+.components-heading.wp-block-foodblog16-plus-custom-navigation-off-canvas-editor__title {
+  margin: 0;
+}
+
+.wp-block-foodblog16-plus-custom-navigation-off-canvas-editor__header {
+  margin-bottom: 8px;
+}
+
+.is-menu-open
+  .wp-block-foodblog16-plus-custom-navigation__responsive-container-content
+  *
+  .block-list-appender {
+  margin-top: 16px;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.wp-block-foodblog16-plus-custom-navigation__loading-indicator-container {
+  padding: 8px 12px;
+}
+
+.wp-block-foodblog16-plus-custom-navigation
+  .wp-block-navigation__uncontrolled-inner-blocks-loading-indicator {
+  margin-top: 0;
+}
+
+@keyframes fadeouthalf {
+  0% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+.wp-block-foodblog16-plus-custom-navigation-delete-menu-button {
+  justify-content: center;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.components-button.is-link.wp-block-navigation-manage-menus-button {
+  margin-bottom: 16px;
+}
+
+.wp-block-foodblog16-plus-custom-navigation__overlay-menu-preview {
+  align-items: center;
+  background-color: #f0f0f0;
+  display: flex;
+  height: 64px !important;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  padding: 0 24px;
+  width: 100%;
+}
+.wp-block-foodblog16-plus-custom-navigation__overlay-menu-preview.open {
+  background-color: #fff;
+  box-shadow: inset 0 0 0 1px #e0e0e0;
+  outline: 1px solid #0000;
+}
+
+.wp-block-foodblog16-plus-custom-navigation-placeholder__actions hr + hr,
+.wp-block-navigation__toolbar-menu-selector.components-toolbar-group:empty {
+  display: none;
+}
+.wp-block-navigation__navigation-selector {
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.wp-block-navigation__navigation-selector-button {
+  border: 1px solid;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.wp-block-navigation__navigation-selector-button__icon {
+  flex: 0 0 auto;
+}
+
+.wp-block-navigation__navigation-selector-button__label {
+  flex: 0 1 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.wp-block-navigation__navigation-selector-button--createnew {
+  border: 1px solid;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.wp-block-foodblog16-plus-custom-navigation__responsive-container-open.components-button {
+  opacity: 1;
+}
+
+.wp-block-foodblog16-plus-custom-navigation__menu-inspector-controls {
+  overflow-x: auto;
+  scrollbar-color: #0000 #0000;
+  scrollbar-gutter: stable both-edges;
+  scrollbar-width: thin;
+  will-change: transform;
+}
+.wp-block-foodblog16-plus-custom-navigation__menu-inspector-controls::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+}
+.wp-block-foodblog16-plus-custom-navigation__menu-inspector-controls::-webkit-scrollbar-track {
+  background-color: initial;
+}
+.wp-block-foodblog16-plus-custom-navigation__menu-inspector-controls::-webkit-scrollbar-thumb {
+  background-clip: padding-box;
+  background-color: initial;
+  border: 3px solid #0000;
+  border-radius: 8px;
+}
+.wp-block-foodblog16-plus-custom-navigation__menu-inspector-controls:focus-within::-webkit-scrollbar-thumb,
+.wp-block-foodblog16-plus-custom-navigation__menu-inspector-controls:focus::-webkit-scrollbar-thumb,
+.wp-block-foodblog16-plus-custom-navigation__menu-inspector-controls:hover::-webkit-scrollbar-thumb {
+  background-color: #949494;
+}
+.wp-block-foodblog16-plus-custom-navigation__menu-inspector-controls:focus,
+.wp-block-foodblog16-plus-custom-navigation__menu-inspector-controls:focus-within,
+.wp-block-foodblog16-plus-custom-navigation__menu-inspector-controls:hover {
+  scrollbar-color: #949494 #0000;
+}
+@media (hover: none) {
+  .wp-block-foodblog16-plus-custom-navigation__menu-inspector-controls {
+    scrollbar-color: #949494 #0000;
+  }
+}
+
+.wp-block-foodblog16-plus-custom-navigation__menu-inspector-controls__empty-message {
+  margin-left: 24px;
+}
+
+.wp-block-foodblog16-plus-custom-navigation__overlay-menu-icon-toggle-group {
+  margin-bottom: 16px;
+}
+
+/*!*******************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./src/blocks/custom-navigation/main.css ***!
+  \*******************************************************************************************************************************************************************************************/
+.wp-block-foodblog16-plus-custom-navigation {
+  position: relative;
+  --navigation-layout-justification-setting: flex-start;
+  --navigation-layout-direction: row;
+  --navigation-layout-wrap: wrap;
+  --navigation-layout-justify: flex-start;
+  --navigation-layout-align: center;
+}
+.wp-block-foodblog16-plus-custom-navigation ul {
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+.wp-block-foodblog16-plus-custom-navigation ul,
+.wp-block-foodblog16-plus-custom-navigation ul li {
+  list-style: none;
+  padding: 0;
+}
+.wp-block-foodblog16-plus-custom-navigation .wp-block-navigation-item {
+  align-items: center;
+  background-color: inherit;
+  display: flex;
+  position: relative;
+}
+.wp-block-foodblog16-plus-custom-navigation
+  .wp-block-navigation-item
+  .wp-block-navigation__submenu-container:empty {
+  display: none;
+}
+.wp-block-foodblog16-plus-custom-navigation .wp-block-navigation-item__content {
+  display: block;
+}
+.wp-block-foodblog16-plus-custom-navigation
+  .wp-block-navigation-item__content.wp-block-navigation-item__content {
+  color: inherit;
+}
+.wp-block-foodblog16-plus-custom-navigation.has-text-decoration-underline
+  .wp-block-navigation-item__content,
+.wp-block-foodblog16-plus-custom-navigationn.has-text-decoration-underline
+  .wp-block-navigation-item__content:active,
+.wp-block-foodblog16-plus-custom-navigation.has-text-decoration-underline
+  .wp-block-navigation-item__content:focus {
+  text-decoration: underline;
+}
+.wp-block-foodblog16-plus-custom-navigation.has-text-decoration-line-through
+  .wp-block-navigation-item__content,
+.wp-block-foodblog16-plus-custom-navigation.has-text-decoration-line-through
+  .wp-block-navigation-item__content:active,
+.wp-block-foodblog16-plus-custom-navigation.has-text-decoration-line-through
+  .wp-block-navigation-item__content:focus {
+  text-decoration: line-through;
+}
+.wp-block-foodblog16-plus-custom-navigationn :where(a),
+.wp-block-foodblog16-plus-custom-navigation :where(a:active),
+.wp-block-foodblog16-plus-custom-navigation :where(a:focus) {
+  text-decoration: none;
+}
+.wp-block-foodblog16-plus-custom-navigation .wp-block-navigation__submenu-icon {
+  align-self: center;
+  background-color: inherit;
+  border: none;
+  color: currentColor;
+  display: inline-block;
+  font-size: inherit;
+  height: 0.6em;
+  line-height: 0;
+  margin-left: 0.25em;
+  padding: 0;
+  width: 0.6em;
+}
+.wp-block-foodblog16-plus-custom-navigation
+  .wp-block-navigation__submenu-icon
+  svg {
+  display: inline-block;
+  stroke: currentColor;
+  height: inherit;
+  margin-top: 0.075em;
+  width: inherit;
+}
+.wp-block-foodblog16-plus-custom-navigation.is-vertical {
+  --navigation-layout-direction: column;
+  --navigation-layout-justify: initial;
+  --navigation-layout-align: flex-start;
+}
+.wp-block-foodblog16-plus-custom-navigation.no-wrap {
+  --navigation-layout-wrap: nowrap;
+}
+.wp-block-foodblog16-plus-custom-navigation.items-justified-center {
+  --navigation-layout-justification-setting: center;
+  --navigation-layout-justify: center;
+}
+.wp-block-foodblog16-plus-custom-navigation.items-justified-center.is-vertical {
+  --navigation-layout-align: center;
+}
+.wp-block-foodblog16-plus-custom-navigation.items-justified-right {
+  --navigation-layout-justification-setting: flex-end;
+  --navigation-layout-justify: flex-end;
+}
+.wp-block-foodblog16-plus-custom-navigation.items-justified-right.is-vertical {
+  --navigation-layout-align: flex-end;
+}
+.wp-block-foodblog16-plus-custom-navigation.items-justified-space-between {
+  --navigation-layout-justification-setting: space-between;
+  --navigation-layout-justify: space-between;
+}
+
+.wp-block-foodblog16-plus-custom-navigation
+  .has-child
+  .wp-block-navigation__submenu-container {
+  align-items: normal;
+  background-color: inherit;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 0;
+  left: -1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 100%;
+  transition: opacity 0.1s linear;
+  visibility: hidden;
+  width: 0;
+  z-index: 2;
+}
+.wp-block-foodblog16-plus-custom-navigation
+  .has-child
+  .wp-block-navigation__submenu-container
+  > .wp-block-navigation-item
+  > .wp-block-navigation-item__content {
+  display: flex;
+  flex-grow: 1;
+}
+.wp-block-foodblog16-plus-custom-navigation
+  .has-child
+  .wp-block-navigation__submenu-container
+  > .wp-block-navigation-item
+  > .wp-block-navigation-item__content
+  .wp-block-navigation__submenu-icon {
+  margin-left: auto;
+  margin-right: 0;
+}
+.wp-block-foodblog16-plus-custom-navigation
+  .has-child
+  .wp-block-navigation__submenu-container
+  .wp-block-navigation-item__content {
+  margin: 0;
+}
+@media (min-width: 782px) {
+  .wp-block-foodblog16-plus-custom-navigation
+    .has-child
+    .wp-block-navigation__submenu-container
+    .wp-block-navigation__submenu-container {
+    left: 100%;
+    top: -1px;
+  }
+  .wp-block-foodblog16-plus-custom-navigation
+    .has-child
+    .wp-block-navigation__submenu-container
+    .wp-block-navigation__submenu-container:before {
+    background: #0000;
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    right: 100%;
+    width: 0.5em;
+  }
+  .wp-block-foodblog16-plus-custom-navigation
+    .has-child
+    .wp-block-navigation__submenu-container
+    .wp-block-navigation__submenu-icon {
+    margin-right: 0.25em;
+  }
+  .wp-block-foodblog16-plus-custom-navigation
+    .has-child
+    .wp-block-navigation__submenu-container
+    .wp-block-navigation__submenu-icon
+    svg {
+    transform: rotate(-90deg);
+  }
+}
+.wp-block-foodblog16-plus-custom-navigation
+  .has-child
+  .wp-block-navigation-submenu__toggle[aria-expanded="true"]
+  ~ .wp-block-navigation__submenu-container,
+.wp-block-foodblog16-plus-custom-navigation
+  .has-child:not(.open-on-click):hover
+  > .wp-block-navigation__submenu-container,
+.wp-block-foodblog16-plus-custom-navigation
+  .has-child:not(.open-on-click):not(.open-on-hover-click):focus-within
+  > .wp-block-navigation__submenu-container {
+  height: auto;
+  min-width: 200px;
+  opacity: 1;
+  overflow: visible;
+  visibility: visible;
+  width: auto;
+}
+
+.wp-block-foodblog16-plus-custom-navigation.has-background
+  .has-child
+  .wp-block-navigation__submenu-container {
+  left: 0;
+  top: 100%;
+}
+@media (min-width: 782px) {
+  .wp-block-foodblog16-plus-custom-navigation.has-background
+    .has-child
+    .wp-block-navigation__submenu-container
+    .wp-block-navigation__submenu-container {
+    left: 100%;
+    top: 0;
+  }
+}
+
+.wp-block-navigation-submenu {
+  display: flex;
+  position: relative;
+}
+.wp-block-navigation-submenu .wp-block-navigation__submenu-icon svg {
+  stroke: currentColor;
+}
+
+button.wp-block-navigation-item__content {
+  background-color: initial;
+  border: none;
+  color: currentColor;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  text-align: left;
+  text-transform: inherit;
+}
+
+.wp-block-navigation-submenu__toggle {
+  cursor: pointer;
+}
+
+.wp-block-navigation-item.open-on-click .wp-block-navigation-submenu__toggle {
+  padding-left: 0;
+  padding-right: 0.85em;
+}
+.wp-block-navigation-item.open-on-click
+  .wp-block-navigation-submenu__toggle
+  + .wp-block-navigation__submenu-icon {
+  margin-left: -0.6em;
+  pointer-events: none;
+}
+
+.wp-block-navigation-item.open-on-click
+  button.wp-block-navigation-item__content:not(
+    .wp-block-navigation-submenu__toggle
+  ) {
+  padding: 0;
+}
+.wp-block-foodblog16-plus-custom-navigation .wp-block-page-list,
+.wp-block-foodblog16-plus-custom-navigation__container,
+.wp-block-foodblog16-plus-custom-navigation__responsive-close,
+.wp-block-foodblog16-plus-custom-navigation__responsive-container,
+.wp-block-foodblog16-plus-custom-navigation__responsive-container-content,
+.wp-block-foodblog16-plus-custom-navigation__responsive-dialog {
+  gap: inherit;
+}
+:where(
+    .wp-block-foodblog16-plus-custom-navigation.has-background
+      .wp-block-navigation-item
+      a:not(.wp-element-button)
+  ),
+:where(
+    .wp-block-foodblog16-plus-custom-navigation.has-background
+      .wp-block-navigation-submenu
+      a:not(.wp-element-button)
+  ) {
+  padding: 0.5em 1em;
+}
+
+:where(
+    .wp-block-foodblog16-plus-custom-navigation
+      .wp-block-navigation__submenu-container
+      .wp-block-navigation-item
+      a:not(.wp-element-button)
+  ),
+:where(
+    .wp-block-foodblog16-plus-custom-navigation
+      .wp-block-navigation__submenu-container
+      .wp-block-navigation-submenu
+      a:not(.wp-element-button)
+  ),
+:where(
+    .wp-block-foodblog16-plus-custom-navigation
+      .wp-block-navigation__submenu-container
+      .wp-block-navigation-submenu
+      button.wp-block-navigation-item__content
+  ),
+:where(
+    .wp-block-foodblog16-plus-custom-navigation
+      .wp-block-navigation__submenu-container
+      .wp-block-pages-list__item
+      button.wp-block-navigation-item__content
+  ) {
+  padding: 0.5em 1em;
+}
+.wp-block-foodblog16-plus-custom-navigation.items-justified-right
+  .wp-block-foodblog16-plus-custom-navigation__container
+  .has-child
+  .wp-block-navigation__submenu-container,
+.wp-block-foodblog16-plus-custom-navigation.items-justified-right
+  .wp-block-page-list
+  > .has-child
+  .wp-block-navigation__submenu-container,
+.wp-block-foodblog16-plus-custom-navigation.items-justified-space-between
+  .wp-block-page-list
+  > .has-child:last-child
+  .wp-block-navigation__submenu-container,
+.wp-block-foodblog16-plus-custom-navigation.items-justified-space-between
+  > .wp-block-foodblog16-plus-custom-navigation__container
+  > .has-child:last-child
+  .wp-block-navigation__submenu-container {
+  left: auto;
+  right: 0;
+}
+.wp-block-foodblog16-plus-custom-navigation.items-justified-right
+  .wp-block-foodblog16-plus-custom-navigation__container
+  .has-child
+  .wp-block-navigation__submenu-container
+  .wp-block-navigation__submenu-container,
+.wp-block-foodblog16-plus-custom-navigation.items-justified-right
+  .wp-block-page-list
+  > .has-child
+  .wp-block-navigation__submenu-container
+  .wp-block-navigation__submenu-container,
+.wp-block-foodblog16-plus-custom-navigation.items-justified-space-between
+  .wp-block-page-list
+  > .has-child:last-child
+  .wp-block-navigation__submenu-container
+  .wp-block-navigation__submenu-container,
+.wp-block-foodblog16-plus-custom-navigation.items-justified-space-between
+  > .wp-block-foodblog16-plus-custom-navigation__container
+  > .has-child:last-child
+  .wp-block-navigation__submenu-container
+  .wp-block-navigation__submenu-container {
+  left: -1px;
+  right: -1px;
+}
+@media (min-width: 782px) {
+  .wp-block-foodblog16-plus-custom-navigation.items-justified-right
+    .wp-block-foodblog16-plus-custom-navigation__container
+    .has-child
+    .wp-block-navigation__submenu-container
+    .wp-block-navigation__submenu-container,
+  .wp-block-foodblog16-plus-custom-navigation.items-justified-right
+    .wp-block-page-list
+    > .has-child
+    .wp-block-navigation__submenu-container
+    .wp-block-navigation__submenu-container,
+  .wp-block-foodblog16-plus-custom-navigation.items-justified-space-between
+    .wp-block-page-list
+    > .has-child:last-child
+    .wp-block-navigation__submenu-container
+    .wp-block-navigation__submenu-container,
+  .wp-block-foodblog16-plus-custom-navigation.items-justified-space-between
+    > .wp-block-foodblog16-plus-custom-navigation__container
+    > .has-child:last-child
+    .wp-block-navigation__submenu-container
+    .wp-block-navigation__submenu-container {
+    left: auto;
+    right: 100%;
+  }
+}
+
+.wp-block-foodblog16-plus-custom-navigation:not(.has-background)
+  .wp-block-navigation__submenu-container {
+  background-color: #fff;
+  border: 1px solid #00000026;
+}
+
+.wp-block-foodblog16-plus-custom-navigation.has-background
+  .wp-block-navigation__submenu-container {
+  background-color: inherit;
+}
+
+.wp-block-foodblog16-plus-custom-navigation:not(.has-text-color)
+  .wp-block-navigation__submenu-container {
+  color: #000;
+}
+
+.wp-block-foodblog16-plus-custom-navigation__container {
+  align-items: var(--navigation-layout-align, initial);
+  display: flex;
+  flex-direction: var(--navigation-layout-direction, initial);
+  flex-wrap: var(--navigation-layout-wrap, wrap);
+  justify-content: var(--navigation-layout-justify, initial);
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+.wp-block-foodblog16-plus-custom-navigation__container .is-responsive {
+  display: none;
+}
+
+.wp-block-foodblog16-plus-custom-navigation__container:only-child,
+.wp-block-page-list:only-child {
+  flex-grow: 1;
+}
+@keyframes overlay-menu__fade-in-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(0.5em);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.wp-block-foodblog16-plus-custom-navigation__responsive-container {
+  bottom: 0;
+  display: none;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+.wp-block-foodblog16-plus-custom-navigation__responsive-container
+  :where(.wp-block-navigation-item a) {
+  color: inherit;
+}
+.wp-block-foodblog16-plus-custom-navigation__responsive-container
+  .wp-block-foodblog16-plus-custom-navigation__responsive-container-content {
+  align-items: var(--navigation-layout-align, initial);
+  display: flex;
+  flex-direction: var(--navigation-layout-direction, initial);
+  flex-wrap: var(--navigation-layout-wrap, wrap);
+  justify-content: var(--navigation-layout-justify, initial);
+}
+.wp-block-foodblog16-plus-custom-navigation__responsive-container:not(
+    .is-menu-open.is-menu-open
+  ) {
+  background-color: inherit !important;
+  color: inherit !important;
+}
+.wp-block-foodblog16-plus-custom-navigation__responsive-container.is-menu-open {
+  animation: overlay-menu__fade-in-animation 0.1s ease-out;
+  animation-fill-mode: forwards;
+  background-color: inherit;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  padding: clamp(1rem, var(--wp--style--root--padding-top), 20rem)
+    clamp(1rem, var(--wp--style--root--padding-right), 20rem)
+    clamp(1rem, var(--wp--style--root--padding-bottom), 20rem)
+    clamp(1rem, var(--wp--style--root--padding-left), 20em);
+  z-index: 100000;
+}
+@media (prefers-reduced-motion: reduce) {
+  .wp-block-foodblog16-plus-custom-navigation__responsive-container.is-menu-open {
+    animation-delay: 0s;
+    animation-duration: 1ms;
+  }
+}
+.wp-block-foodblog16-plus-custom-navigation__responsive-container.is-menu-open
+  .wp-block-foodblog16-plus-custom-navigation__responsive-container-content {
+  align-items: var(--navigation-layout-justification-setting, inherit);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  overflow: visible;
+  padding-top: calc(2rem + 24px);
+}
+.wp-block-foodblog16-plus-custom-navigation__responsive-container.is-menu-open
+  .wp-block-foodblog16-plus-custom-navigation__responsive-container-content,
+.wp-block-foodblog16-plus-custom-navigation__responsive-container.is-menu-open
+  .wp-block-foodblog16-plus-custom-navigation__responsive-container-content
+  .wp-block-foodblog16-plus-custom-navigation__container,
+.wp-block-foodblog16-plus-custom-navigation__responsive-container.is-menu-open
+  .wp-block-foodblog16-plus-custom-navigation__responsive-container-content
+  .wp-block-page-list {
+  justify-content: flex-start;
+}
+.wp-block-foodblog16-plus-custom-navigation__responsive-container.is-menu-open
+  .wp-block-foodblog16-plus-custom-navigation__responsive-container-content
+  .wp-block-navigation__submenu-icon {
+  display: none;
+}
+.wp-block-foodblog16-plus-custom-navigation__responsive-container.is-menu-open
+  .wp-block-foodblog16-plus-custom-navigation__responsive-container-content
+  .has-child
+  .wp-block-navigation__submenu-container {
+  border: none;
+  height: auto;
+  min-width: 200px;
+  opacity: 1;
+  overflow: initial;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  position: static;
+  visibility: visible;
+  width: auto;
+}
+.wp-block-foodblog16-plus-custom-navigation__responsive-container.is-menu-open
+  .wp-block-foodblog16-plus-custom-navigation__responsive-container-content
+  .wp-block-foodblog16-plus-custom-navigation__container,
+.wp-block-foodblog16-plus-custom-navigation__responsive-container.is-menu-open
+  .wp-block-foodblog16-plus-custom-navigation__responsive-container-content
+  .wp-block-navigation__submenu-container {
+  gap: inherit;
+}
+.wp-block-foodblog16-plus-custom-navigation__responsive-container.is-menu-open
+  .wp-block-foodblog16-plus-custom-navigation__responsive-container-content
+  .wp-block-navigation__submenu-container {
+  padding-top: var(--wp--style--block-gap, 2em);
+}
+.wp-block-foodblog16-plus-custom-navigation__responsive-container.is-menu-open
+  .wp-block-foodblog16-plus-custom-navigation__responsive-container-content
+  .wp-block-navigation-item__content {
+  padding: 0;
+}
+.wp-block-foodblog16-plus-custom-navigation__responsive-container.is-menu-open
+  .wp-block-foodblog16-plus-custom-navigation__responsive-container-content
+  .wp-block-navigation-item,
+.wp-block-foodblog16-plus-custom-navigation__responsive-container.is-menu-open
+  .wp-block-foodblog16-plus-custom-navigation__responsive-container-content
+  .wp-block-foodblog16-plus-custom-navigation__container,
+.wp-block-foodblog16-plus-custom-navigation__responsive-container.is-menu-open
+  .wp-block-foodblog16-plus-custom-navigation__responsive-container-content
+  .wp-block-page-list {
+  align-items: var(--navigation-layout-justification-setting, initial);
+  display: flex;
+  flex-direction: column;
+}
+.wp-block-foodblog16-plus-custom-navigation__responsive-container.is-menu-open
+  .wp-block-navigation-item,
+.wp-block-foodblog16-plus-custom-navigation__responsive-container.is-menu-open
+  .wp-block-navigation-item
+  .wp-block-navigation__submenu-container,
+.wp-block-foodblog16-plus-custom-navigation__responsive-container.is-menu-open
+  .wp-block-foodblog16-plus-custom-navigation__container,
+.wp-block-foodblog16-plus-custom-navigation__responsive-container.is-menu-open
+  .wp-block-page-list {
+  background: #0000 !important;
+  color: inherit !important;
+}
+.wp-block-foodblog16-plus-custom-navigation__responsive-container.is-menu-open
+  .wp-block-navigation__submenu-container.wp-block-navigation__submenu-container.wp-block-navigation__submenu-container.wp-block-navigation__submenu-container {
+  left: auto;
+  right: auto;
+}
+@media (min-width: 600px) {
+  .wp-block-foodblog16-plus-custom-navigation__responsive-container:not(
+      .hidden-by-default
+    ):not(.is-menu-open) {
+    background-color: inherit;
+    display: block;
+    position: relative;
+    width: 100%;
+    z-index: auto;
+  }
+  .wp-block-foodblog16-plus-custom-navigation__responsive-container:not(
+      .hidden-by-default
+    ):not(.is-menu-open)
+    .wp-block-foodblog16-plus-custom-navigation__responsive-container-close {
+    display: none;
+  }
+  .wp-block-foodblog16-plus-custom-navigation__responsive-container.is-menu-open
+    .wp-block-navigation__submenu-container.wp-block-navigation__submenu-container.wp-block-navigation__submenu-container.wp-block-navigation__submenu-container {
+    left: 0;
+  }
+}
+
+.wp-block-foodblog16-plus-custom-navigation:not(.has-background)
+  .wp-block-foodblog16-plus-custom-navigation__responsive-container.is-menu-open {
+  background-color: #fff;
+}
+
+.wp-block-foodblog16-plus-custom-navigation:not(.has-text-color)
+  .wp-block-foodblog16-plus-custom-navigation__responsive-container.is-menu-open {
+  color: #000;
+}
+
+.wp-block-navigation__toggle_button_label {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.wp-block-foodblog16-plus-custom-navigation__responsive-container-close,
+.wp-block-foodblog16-plus-custom-navigation__responsive-container-open {
+  background: #0000;
+  border: none;
+  color: currentColor;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  text-transform: inherit;
+  vertical-align: middle;
+}
+.wp-block-foodblog16-plus-custom-navigation__responsive-container-close svg,
+.wp-block-foodblog16-plus-custom-navigation__responsive-container-open svg {
+  fill: currentColor;
+  display: block;
+  height: 24px;
+  pointer-events: none;
+  width: 24px;
+}
+
+.wp-block-foodblog16-plus-custom-navigation__responsive-container-open {
+  display: flex;
+}
+.wp-block-foodblog16-plus-custom-navigation__responsive-container-open.wp-block-foodblog16-plus-custom-navigation__responsive-container-open.wp-block-foodblog16-plus-custom-navigation__responsive-container-open {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+@media (min-width: 600px) {
+  .wp-block-foodblog16-plus-custom-navigation__responsive-container-open:not(
+      .always-shown
+    ) {
+    display: none;
+  }
+}
+
+.wp-block-foodblog16-plus-custom-navigation__responsive-container-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+.wp-block-foodblog16-plus-custom-navigation__responsive-container-close.wp-block-foodblog16-plus-custom-navigation__responsive-container-close.wp-block-foodblog16-plus-custom-navigation__responsive-container-close {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.wp-block-foodblog16-plus-custom-navigation__responsive-close {
+  width: 100%;
+}
+.has-modal-open .wp-block-foodblog16-plus-custom-navigation__responsive-close {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--wp--style--global--wide-size, 100%);
+}
+.wp-block-foodblog16-plus-custom-navigation__responsive-close:focus {
+  outline: none;
+}
+
+.is-menu-open .wp-block-foodblog16-plus-custom-navigation__responsive-close,
+.is-menu-open
+  .wp-block-foodblog16-plus-custom-navigation__responsive-container-content,
+.is-menu-open .wp-block-foodblog16-plus-custom-navigation__responsive-dialog {
+  box-sizing: border-box;
+}
+
+.wp-block-foodblog16-plus-custom-navigation__responsive-dialog {
+  position: relative;
+}
+
+.has-modal-open
+  .admin-bar
+  .is-menu-open
+  .wp-block-foodblog16-plus-custom-navigation__responsive-dialog {
+  margin-top: 46px;
+}
+@media (min-width: 782px) {
+  .has-modal-open
+    .admin-bar
+    .is-menu-open
+    .wp-block-foodblog16-plus-custom-navigation__responsive-dialog {
+    margin-top: 32px;
+  }
+}
+
+html.has-modal-open {
+  overflow: hidden;
+}
+
+
+/*# sourceMappingURL=index.css.map*/

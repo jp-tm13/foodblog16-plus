@@ -1,0 +1,60 @@
+/*!*****************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./src/blocks/recipe-explorer/main.css ***!
+  \*****************************************************************************************************************************************************************************************/
+.fblgstp-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fblgstp-list-nav-hero {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  list-style: none;
+}
+
+.fblgstp-link-nav-hero:link,
+.fblgstp-link-nav-hero:visited {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #333333;
+  padding: 0.6rem 1.2rem;
+  border: 2px solid #888888;
+
+  transition: all 0.3s;
+}
+
+.fblgstp-link-nav-hero:hover,
+.fblgstp-link-nav-hero:active {
+  color: #ffffff;
+  background-color: #66a80f;
+  border: 2px solid #66a80f;
+}
+
+.fblgstp-recipe {
+}
+
+.fblgstp-recipe-link {
+}
+
+.fblgstp-recipe-image {
+}
+
+.fblgstp-recipe-content {
+}
+
+.fblgstp-recipe-title {
+}
+
+.fblgstp-recipe-rating {
+}
+
+/* HELPER CLASSES */
+/******************/
+.fblgstp-active-nav-link {
+}
+
