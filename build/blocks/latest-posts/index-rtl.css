@@ -1,0 +1,180 @@
+/*!**************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./src/blocks/latest-posts/main.css ***!
+  \**************************************************************************************************************************************************************************************/
+/* RECIPES */
+/***********/
+.wp-block-foodblog16-plus-latest-posts .fblgstp-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wp-block-foodblog16-plus-latest-posts .fblgstp-container-posts {
+  display: grid;
+  -moz-column-gap: 3.2rem;
+       column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.wp-block-foodblog16-plus-latest-posts .fblgstp-recipe {
+  flex: 1;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+.wp-block-foodblog16-plus-latest-posts .fblgstp-recipe-link {
+  text-decoration: none;
+}
+
+.wp-block-foodblog16-plus-latest-posts .fblgstp-recipe-image {
+  width: 100%;
+  height: 20rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.wp-block-foodblog16-plus-latest-posts .fblgstp-recipe-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 3.6rem 1.2rem;
+}
+
+.wp-block-foodblog16-plus-latest-posts .fblgstp-recipe-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.wp-block-foodblog16-plus-latest-posts .fblgstp-recipe-rating {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.wp-block-foodblog16-plus-latest-posts .fblgstp-button {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #66a80f;
+  padding: 1.2rem 2.4rem;
+
+  transition: all 0.3s;
+}
+
+.wp-block-foodblog16-plus-latest-posts .fblgstp-button:hover {
+  background-color: #47760b;
+}
+
+.wp-block-foodblog16-plus-latest-posts .fblgstp-button i {
+  margin-right: 0.6rem;
+}
+
+/* POSTS */
+/*********/
+
+.wp-block-foodblog16-plus-latest-posts .fblgstp-post {
+  flex: 1;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+.wp-block-foodblog16-plus-latest-posts .fblgstp-post-link {
+  text-decoration: none;
+}
+
+.wp-block-foodblog16-plus-latest-posts .fblgstp-post-image {
+  width: 100%;
+  height: 18rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.wp-block-foodblog16-plus-latest-posts .fb16-post-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1.2rem 1.2rem;
+}
+
+.wp-block-foodblog16-plus-latest-posts .fb16-post-categories {
+  display: flex;
+  gap: 0.8rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #888888;
+  text-transform: uppercase;
+}
+
+.wp-block-foodblog16-plus-latest-posts
+  .fb16-post-categories
+  .fblgstp-post-link {
+  display: none;
+}
+
+.wp-block-foodblog16-plus-latest-posts .fb16-post-categories ul {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  gap: 1.2rem;
+}
+
+.wp-block-foodblog16-plus-latest-posts .fb16-post-categories a {
+  text-decoration: none;
+}
+
+.wp-block-foodblog16-plus-latest-posts .fb16-post-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.wp-block-foodblog16-plus-latest-posts .fb16-post-date {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #888888;
+}
+
+.wp-block-foodblog16-plus-latest-posts .fb16-post-text {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  margin-top: 0.6rem;
+}
+
+/* HELPER CLASSES */
+/******************/
+.wp-block-foodblog16-plus-latest-posts .fblgstp-margin-bot-sm {
+  margin-bottom: 1.8rem !important;
+}
+
+.wp-block-foodblog16-plus-latest-posts .fblgstp-gap-3-2 {
+  gap: 3.2rem;
+}
+
+.wp-block-foodblog16-plus-latest-posts .fblgstp-justify-content-e {
+  justify-content: end !important;
+}
+
+.wp-block-foodblog16-plus-latest-posts .fblgstp-grid-4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* QUERIES */
+/***********/
+/* 960px */
+@media (max-width: 60em) {
+  .wp-block-foodblog16-plus-latest-posts .fblgstp-grid-4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 400px */
+@media (max-width: 25em) {
+  .wp-block-foodblog16-plus-latest-posts .fblgstp-grid-4-cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+

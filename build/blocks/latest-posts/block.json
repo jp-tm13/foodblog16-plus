@@ -1,10 +1,10 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "foodblog16-plus/recipe-explorer",
-  "title": "Recipe Explorer",
+  "name": "foodblog16-plus/latest-posts",
+  "title": "Latest Posts",
   "category": "widgets",
-  "description": "Adds a block that alows for displaying the latest/random recipes.",
+  "description": "Adds a block that alows for displaying the latest posts/recipes.",
   "keywords": [
     "posts"
   ],
@@ -16,11 +16,15 @@
   "attributes": {
     "title": {
       "type": "string",
-      "default": "Explore our recipes"
+      "default": "Latest Posts"
     },
     "count": {
       "type": "number",
       "default": 4
+    },
+    "postType": {
+      "type": "string",
+      "default": "post"
     }
   }
 }

@@ -12,181 +12,118 @@ import { RawHTML } from "@wordpress/element";
 
 // internal dependencies
 import block from "./block.json";
-import icons from "../../icons/icons";
+import explorer from "../../icons/explorer";
 import "./main.css";
 
 registerBlockType(block.name, {
-  icon: icons.primary,
+  icon: explorer.primary,
   edit({ attributes, setAttributes }) {
-    const { title, count, cuisines } = attributes;
+    // get attributes
+    const { title, count } = attributes;
     const blockProps = useBlockProps();
 
+    // get all possible course terms
     const terms = useSelect((select) => {
       return select("core").getEntityRecords("taxonomy", "fblgstp_course", {
         per_page: -1,
       });
     });
 
-    const suggestions = {};
-    terms?.forEach((term) => {
-      suggestions[term.name] = term;
+    // check if default term is among them
+    const current_course = terms?.find((term) => {
+      return term.slug === "dinner";
     });
 
-    const cuisineIDs = cuisines.map((term) => term.id);
+    // get 'count' amount of top rated post from the given course term
     const posts = useSelect(
       (select) => {
         return select("core").getEntityRecords("postType", "fblgstp_recipe", {
           per_page: count,
           _embed: true,
-          fblgstp_cuisine: cuisineIDs,
+          fblgstp_course: current_course?.id,
           order: "desc",
           orderByRating: 1,
         });
       },
-      [count, cuisineIDs]
+      [count, current_course]
     );
 
     return (
       <>
-        <div className="fblgstp-container">
-          <div {...blockProps}>
-            <RichText
-              tagName="h2"
-              value={title}
-              withoutInteractiveFormatting
-              onChange={(title) => setAttributes({ title })}
-              placeholder={__("Title", "foodblog16-plus")}
-            />
+        <div className="wp-block-foodblog16-plus-recipe-explorer">
+          <div className="fblgstp-container fblgstp-margin-bot-sm">
+            <div {...blockProps}>
+              <RichText
+                tagName="h2"
+                value={title}
+                withoutInteractiveFormatting
+                onChange={(title) => setAttributes({ title })}
+                placeholder={__("Title", "foodblog16-plus")}
+              />
+            </div>
+            <nav>
+              <ul className="fblgstp-list-nav-hero">
+                <li>
+                  <a
+                    href="#dinner"
+                    className="fblgstp-link-nav-hero fblgstp-active-nav-link"
+                  >
+                    {__("Dinner", "foodblog16-plus")}
+                  </a>
+                </li>
+                <li>
+                  <a href="#supper" className="fblgstp-link-nav-hero">
+                    {__("Supper", "foodblog16-plus")}
+                  </a>
+                </li>
+                <li>
+                  <a href="#breakfast" className="fblgstp-link-nav-hero">
+                    {__("Breakfast", "foodblog16-plus")}
+                  </a>
+                </li>
+                <li>
+                  <a href="#dessert" className="fblgstp-link-nav-hero">
+                    {__("Dessert", "foodblog16-plus")}
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </div>
-          <nav>
-            <ul className="fblgstp-list-nav-hero">
-              <li>
-                <a
-                  href="#"
-                  className="fblgstp-link-nav-hero fblgstp-active-nav-link"
-                >
-                  {__("Dinner", "foodblog16-plus")}
-                </a>
-              </li>
-              <li>
-                <a href="#" className="fblgstp-link-nav-hero">
-                  {__("Supper", "foodblog16-plus")}
-                </a>
-              </li>
-              <li>
-                <a href="#" className="fblgstp-link-nav-hero">
-                  {__("Breakfast", "foodblog16-plus")}
-                </a>
-              </li>
-              <li>
-                <a href="#" className="fblgstp-link-nav-hero">
-                  {__("Dessert", "foodblog16-plus")}
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div className="fblgstp-container">
-          {posts?.map((post) => {
-            const featuredImage =
-              post._embedded &&
-              post._embedded["wp:featuredmedia"] &&
-              post._embedded["wp:featuredmedia"].length > 0 &&
-              post._embedded["wp:featuredmedia"][0];
+          <div className="fblgstp-container-posts fblgstp-grid fblgstp-grid-4-cols">
+            {posts?.map((post) => {
+              const featuredImage =
+                post._embedded &&
+                post._embedded["wp:featuredmedia"] &&
+                post._embedded["wp:featuredmedia"].length > 0 &&
+                post._embedded["wp:featuredmedia"][0];
 
-            return (
-              <div className="fblgstp-recipe">
-                <a className="fblgstp-recipe-link" href={post.link}>
-                  {featuredImage && (
-                    <img
-                      src={
-                        featuredImage.media_details.sizes.thumbnail.source_url
-                      }
-                      alt={featuredImage.alt_text}
-                      className="fblgstp-recipe-image"
-                    />
-                  )}
-                  <div className="fblgstp-recipe-content">
-                    <p class="fblgstp-recipe-title">
-                      <RawHTML>{post.title.rendered}</RawHTML>
-                    </p>
-                    <div class="fblgstp-recipe-rating">
-                      <i class="bi bi-star-fill"></i>
-                      <span>4.8 from 106 votes</span>
+              return (
+                <div className="fblgstp-recipe">
+                  <a className="fblgstp-recipe-link" href={post.link}>
+                    {featuredImage && (
+                      <img
+                        src={
+                          featuredImage.media_details.sizes.medium.source_url
+                        }
+                        alt={featuredImage.alt_text}
+                        className="fblgstp-recipe-image"
+                      />
+                    )}
+                    <div className="fblgstp-recipe-content">
+                      <p className="fblgstp-recipe-title">
+                        <RawHTML>{post.title.rendered}</RawHTML>
+                      </p>
+                      <div className="fblgstp-recipe-rating">
+                        <i className="bi bi-star-fill"></i>
+                        <span>{post.meta.fblgstp_recipe_rating}</span>
+                      </div>
                     </div>
-                  </div>
-                </a>
-              </div>
-            );
-          })}
-        </div>
-
-        {/* <InspectorControls>
-          <PanelBody title={__("Settings", "foodblog16-plus")}></PanelBody>
-          <QueryControls
-            numberOfItems={count}
-            minItems={1}
-            maxItems={10}
-            onNumberOfItemsChange={(count) => setAttributes({ count })}
-            categorySuggestions={suggestions}
-            onCategoryChange={(newTerms) => {
-              const newCuisines = [];
-              newTerms.forEach((cuisine) => {
-                if (typeof cuisine == "object") {
-                  newCuisines.push(cuisine);
-                }
-
-                const cuisineTerm = terms?.find(
-                  (term) => term.name === cuisine
-                );
-
-                if (cuisineTerm) newCuisines.push(cuisineTerm);
-              });
-
-              setAttributes({ cuisines: newCuisines });
-            }}
-            selectedCategories={cuisines}
-          />
-        </InspectorControls>
-        <div {...blockProps}>
-          <RichText
-            tagName="h6"
-            value={title}
-            withoutInteractiveFormatting
-            onChange={(title) => setAttributes({ title })}
-            placeholder={__("Title", "foodblog16-plus")}
-          />
-          {posts?.map((post) => {
-            const featuredImage =
-              post._embedded &&
-              post._embedded["wp:featuredmedia"] &&
-              post._embedded["wp:featuredmedia"].length > 0 &&
-              post._embedded["wp:featuredmedia"][0];
-
-            return (
-              <div class="single-post">
-                {featuredImage && (
-                  <a class="single-post-image" href={post.link}>
-                    <img
-                      src={
-                        featuredImage.media_details.sizes.thumbnail.source_url
-                      }
-                      alt={featuredImage.alt_text}
-                    />
                   </a>
-                )}
-                <div class="single-post-detail">
-                  <a href={post.link}>
-                    <RawHTML>{post.title.rendered}</RawHTML>
-                  </a>
-                  <span>
-                    by <a href={post.link}>{post._embedded.author[0].name}</a>
-                  </span>
                 </div>
-              </div>
-            );
-          })}
-        </div> */}
+              );
+            })}
+          </div>
+        </div>
       </>
     );
   },

@@ -10,7 +10,7 @@ function fblgstp_recipe_summary_render_cb($atts, $content, $block) {
   $post_ID = $block->context['postId'];
   $post_terms = get_the_terms($post_ID, 'fblgstp_cuisine');
   $cuisines = '';
-  $last_key = array_key_last($post_terms);
+  $last_key = !empty($post_terms) ? array_key_last($post_terms) : [];
   foreach ($post_terms as $key => $term) {
     $url = get_term_meta($term->term_id, 'fblgstp_more_info_url', true);
     $comma = $last_key === $key ? '' : ', ';
@@ -22,6 +22,7 @@ function fblgstp_recipe_summary_render_cb($atts, $content, $block) {
   # get rating
   $rating = get_post_meta($post_ID, 'fblgstp_recipe_rating', true);
 
+  # get rating count
   global $wpdb;
   $user_ID = get_current_user_id();
   $rating_count = $wpdb->get_var($wpdb->prepare(

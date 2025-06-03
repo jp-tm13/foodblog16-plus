@@ -12,11 +12,11 @@ import { __ } from "@wordpress/i18n";
 // internal dependencies
 import StyleProvider from "../../style-provider";
 import block from "./block.json";
-import icons from "../../icons/icons";
+import summary from "../../icons/summary";
 import "./main.css";
 
 registerBlockType(block.name, {
-  icon: icons.primary,
+  icon: summary.primary,
   edit({ attributes, setAttributes, context }) {
     // get attributes and context
     const { prepTime, cookTime, course } = attributes;

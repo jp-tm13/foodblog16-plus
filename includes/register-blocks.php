@@ -3,18 +3,8 @@
 function fblgstp_register_blocks() {
   # define the blocks
   $blocks = [
-    ['name' => 'custom-header'],
-    ['name' => 'search-form', 'options' => [
-      'render_callback' => 'fblgstp_search_form_render_cb'
-    ]],
     ['name' => 'page-header', 'options' => [
       'render_callback' => 'fblgstp_page_header_render_cb'
-    ]],
-    ['name' => 'header-tools', 'options' => [
-      'render_callback' => 'fblgstp_header_tools_render_cb'
-    ]],
-    ['name' => 'authentication-modal', 'options' => [
-      'render_callback' => 'fblgstp_authentication_modal_render_cb'
     ]],
     ['name' => 'navigation-search', 'options' => [
       'render_callback' => 'fblgstp_navigation_search_render_cb'
@@ -27,6 +17,9 @@ function fblgstp_register_blocks() {
     ]],
     ['name' => 'recipe-explorer', 'options' => [
       'render_callback' => 'fblgstp_recipe_explorer_render_cb'
+    ]],
+    ['name' => 'latest-posts', 'options' => [
+      'render_callback' => 'fblgstp_latest_posts_render_cb'
     ]]
   ];
 

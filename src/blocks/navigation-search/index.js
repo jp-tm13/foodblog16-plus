@@ -1,6 +1,8 @@
+// wordpress dependencies
 import { registerBlockType } from "@wordpress/blocks";
-import useBlockProps from "@wordpress/block-editor";
 import { __ } from "@wordpress/i18n";
+
+// internal dependencies
 import block from "./block.json";
 import search from "../../icons/search";
 import "./main.css";

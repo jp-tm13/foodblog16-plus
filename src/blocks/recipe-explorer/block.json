@@ -9,6 +9,7 @@
   "version": "1.0.0",
   "textdomain": "foodblog16-plus",
   "editorScript": "file:./index.js",
+  "viewScript": "file:./frontend.js",
   "style": "file:./index.css",
   "attributes": {
     "title": {
@@ -18,10 +19,6 @@
     "count": {
       "type": "number",
       "default": 4
-    },
-    "cuisines": {
-      "type": "array",
-      "default": []
     }
   }
 }

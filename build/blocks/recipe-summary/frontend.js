@@ -13075,18 +13075,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_api_fetch__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_api_fetch__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__);
+// external dependencies
 
+
+// wordpress dependencies
 
 
 
 function RecipeRating(props) {
+  // define states for average rating and permission
   const [avgRating, setAvgRating] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(props.avgRating);
   const [permission, setPermission] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(props.loggedIn);
+
+  // prevent rating more than once
   (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
     if (props.ratingCount) {
       setPermission(false);
     }
   }, []);
+
+  // output rating component
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_3__["default"], {
     value: avgRating,
     precision: 0.5,
@@ -13111,11 +13119,14 @@ function RecipeRating(props) {
   });
 }
 document.addEventListener("DOMContentLoaded", () => {
+  // get data for rating component
   const block = document.querySelector("#recipe-rating");
   const postID = parseInt(block.dataset.postId);
   const avgRating = parseFloat(block.dataset.avgRating);
   const loggedIn = !!block.dataset.loggedIn;
   const ratingCount = !!parseInt(block.dataset.ratingCount);
+
+  // render rating component
   const root = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createRoot)(block);
   root.render(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(RecipeRating, {
     postID: postID,

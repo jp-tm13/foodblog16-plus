@@ -1,3 +1,4 @@
+// wordpress dependencies
 import { registerBlockType } from "@wordpress/blocks";
 import {
   useBlockProps,
@@ -6,12 +7,14 @@ import {
 } from "@wordpress/block-editor";
 import { PanelBody, ToggleControl } from "@wordpress/components";
 import { __ } from "@wordpress/i18n";
+
+// internal dependencies
 import block from "./block.json";
-import icons from "../../icons/icons.js";
+import header from "../../icons/header";
 import "./main.css";
 
 registerBlockType(block.name, {
-  icon: icons.primary,
+  icon: header.primary,
   edit({ attributes, setAttributes }) {
     const { content, showCategory } = attributes;
     const blockProps = useBlockProps();

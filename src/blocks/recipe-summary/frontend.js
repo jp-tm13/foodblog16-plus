@@ -1,17 +1,23 @@
+// external dependencies
 import { Rating } from "@mui/material";
+
+// wordpress dependencies
 import { createRoot, useState, useEffect } from "@wordpress/element";
 import apiFetch from "@wordpress/api-fetch";
 
 function RecipeRating(props) {
+  // define states for average rating and permission
   const [avgRating, setAvgRating] = useState(props.avgRating);
   const [permission, setPermission] = useState(props.loggedIn);
 
+  // prevent rating more than once
   useEffect(() => {
     if (props.ratingCount) {
       setPermission(false);
     }
   }, []);
 
+  // output rating component
   return (
     <Rating
       value={avgRating}
@@ -44,12 +50,14 @@ function RecipeRating(props) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  // get data for rating component
   const block = document.querySelector("#recipe-rating");
   const postID = parseInt(block.dataset.postId);
   const avgRating = parseFloat(block.dataset.avgRating);
   const loggedIn = !!block.dataset.loggedIn;
   const ratingCount = !!parseInt(block.dataset.ratingCount);
 
+  // render rating component
   const root = createRoot(block);
   root.render(
     <RecipeRating
