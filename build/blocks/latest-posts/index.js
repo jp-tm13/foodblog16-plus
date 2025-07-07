@@ -8,7 +8,7 @@
   \********************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"foodblog16-plus/latest-posts","title":"Latest Posts","category":"widgets","description":"Adds a block that alows for displaying the latest posts/recipes.","keywords":["posts"],"version":"1.0.0","textdomain":"foodblog16-plus","editorScript":"file:./index.js","viewScript":"file:./frontend.js","style":"file:./index.css","attributes":{"title":{"type":"string","default":"Latest Posts"},"count":{"type":"number","default":4},"postType":{"type":"string","default":"post"}}}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"foodblog16-plus/latest-posts","title":"Latest Posts","category":"widgets","description":"Adds a block that alows for displaying the latest posts/recipes.","keywords":["posts"],"version":"1.0.0","textdomain":"foodblog16-plus","editorScript":"file:./index.js","style":"file:./index.css","attributes":{"title":{"type":"string","default":"Latest Posts"},"count":{"type":"number","default":4},"postType":{"type":"string","default":"post"}}}');
 
 /***/ }),
 
